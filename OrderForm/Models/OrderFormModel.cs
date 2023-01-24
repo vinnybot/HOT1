@@ -10,12 +10,12 @@ namespace OrderForm.Models
 
         public string? DiscountMessage { get; set; }
 
-        public decimal? PricePerShirt { get; set; } = 15;
+        public decimal? PricePerShirt { get; set; } = 15.00M;
 
-        public decimal? Subtotal { get; set; }
+        public decimal? Subtotal { get; set; } = 0;
 
         public decimal? Tax { get; set; } = 0.08M;
-        public decimal? Total { get; set; }
+        public decimal? Total { get; set; } = 0;
 
         public decimal? CalculateTotal()
         {
